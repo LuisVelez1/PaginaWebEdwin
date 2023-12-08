@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/moto.png">
+    <title>Licensee</title>
+
+    <link rel="stylesheet" href="/css/styleAdmin.css">
+
+</head>
+
+<body>
+    <header id="header">
+        <h1>Licensee</h1>
+        <a href="index.html"><b>Home</b></a>
+    </header>
+
+    <main>
+        <div class="contenedor">
+            <!-- Add -->
+            <div class="añadir">
+                <h2>Añadir</h2>
+                <form>
+                    <label>Product Name</label>
+                    <input type="text" id="productoAñadir" name="nombreDelProducto">
+
+                    <label>Product Value</label>
+                    <input type="number" id="valorAñadir">
+
+                    <label>Category</label>
+                    <input type="text" id="categoriaAñadir">
+
+                    <label>Stock</label>
+                    <input type="number" id="existenciaAñadir">
+
+                    <label>Url Image</label>
+                    <input type="text" id="ImagenAñadir">
+
+                    <input class="button" type="button" id="botonAñadir" value="Añadir">
+                </form>
+            </div>
+            <!-- Edit -->
+            <div class="editar">
+                <h2>Edit</h2>
+                <form>
+                    <label>Product Name</label>
+                    <select id="productoEditar">
+                        <option value="">---</option>
+                    </select>
+
+                    <label>Atributte</label>
+                    <select id="atributoEditar">
+                        <option value="">---</option>
+                    </select>
+
+                    <label>New Value</label>
+                    <input type="text" id="nuevoAtributo">
+
+                    <input class="button" type="button" id="botonEditar" value="Editar">
+                </form>
+            </div>
+
+            <!-- Delete -->
+            <div class="eliminar">
+                <h2>Delete</h2>
+
+                <form>
+                    <label>Product Name</label>
+                    <select id="productoEliminar">
+                        <option value="">---</option>
+                    </select>
+                    <input class="button" type="button" id="botonEliminar" value="Eliminar">
+                </form>
+            </div>
+        </div>
+
+        <!-- show Message -->
+        <div class="contenedorMensaje">
+            <div id="mensaje"></div>
+        </div>
+
+        <!-- Products -->
+        <div class="contenedorProductos">
+            <h2>Motorbikes</h2>
+            <div class="mostrarProductos" id="mostrarProductos">
+                
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <script src="/js/admin.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/moto.png">
+    <link href="/css/styleUser.css" rel="stylesheet" type="text/css">
+    <title>Licensee</title>
+
+</head>
+
+<body>
+    <header id="header">
+        <h1>Licensee</h1>
+        <a href="admin.html"><b>Admin View</b></a>
+        <div>
+            <img id="carrito" class="carrito" src="/img/cart-icon.png" alt="">
+            <div id="numero"></div>
+        </div>
+    </header>
+    <div class="subHeader">
+        <span>Search Name Or Category</span><input type="text" name="Search Bar" id="search-bar">
+        <button onclick="ordernarPrecioAscendente()">Order Price Increment</button>
+        <button onclick="ordenarPrecioDescendente()">Order Price Decrement</button> 
+    </div>
+    
+    <main>
+        <div id="contenedor" class="contenedor"> </div>
+    </main>
+
+    <div id="contenedorCompra">
+        <div id="informacionCompra" class="informacionCompra">
+            <h2>Basket</h2>
+            <p class="x" id="x">x</p>
+        </div>
+        
+        <div class="productosCompra" id="productosCompra"></div>
+        <div class="total" id="total"></div>
+        <button>Buy</button>
+    </div>
+   
+
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
